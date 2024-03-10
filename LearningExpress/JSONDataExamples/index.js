@@ -8,10 +8,11 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/json-data',(req,res)=>{
-    // const newItem = data.map((item)=>{
-    //     const{id} = item;
-    //     return {id};
-    // })
+    const newItem = data.map((item)=>{
+        const {id} = item;
+
+        return {id};
+    })
     res.send(newItem);
 })
 
